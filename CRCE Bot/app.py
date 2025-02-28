@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 recaptcha = ReCaptcha(app=app)
 app.secret_key=os.urandom(24)
-app.static_folder = 'static'
+app.static_folder = 'static'    
 
 
 app.config.update(dict(
